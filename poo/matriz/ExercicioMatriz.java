@@ -1,13 +1,13 @@
 package poo.matriz;
 
-import utils.Mensagens;
+import utils.Messages;
 
 public class ExercicioMatriz {
 
     public static void main(String[] args) {
 
-        int m = Mensagens.leInteiro("Number M: ");
-        int n = Mensagens.leInteiro("Number N: ");
+        int m = Messages.readInt("Number M: ");
+        int n = Messages.readInt("Number N: ");
 
         int[][] matriz = new int[m][n];
 
@@ -15,11 +15,11 @@ public class ExercicioMatriz {
 
             for (int j = 0; j < matriz[i].length; j++) {
 
-                matriz[i][j] = Mensagens.leInteiro("");
+                matriz[i][j] = Messages.readInt("");
             }
         }
 
-        int selectedNumber = Mensagens.leInteiro("X: ");
+        int selectedNumber = Messages.readInt("X: ");
 
         for (int i = 0; i < matriz.length; i++) {
 

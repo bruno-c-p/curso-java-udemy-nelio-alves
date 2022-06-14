@@ -3,7 +3,7 @@ package poo.array.exercicio;
 import java.util.ArrayList;
 import java.util.List;
 
-import utils.Mensagens;
+import utils.Messages;
 
 public class EmployeeMain {
 
@@ -11,29 +11,29 @@ public class EmployeeMain {
 
         List<Employee> employees = new ArrayList<>();
 
-        int employeesQuantity = Mensagens.leInteiro("How many employees will be registered? ");
+        int employeesQuantity = Messages.readInt("How many employees will be registered? ");
 
         for (int i = 0; i < employeesQuantity; i++) {
 
-            Mensagens.mostraMSG("Employee #" + (i + 1));
+            Messages.showMSG("Employee #" + (i + 1));
 
-            int id = Mensagens.leInteiro("Employee #" + (i + 1) + " id:");
+            int id = Messages.readInt("Employee #" + (i + 1) + " id:");
 
             while (hasId(employees, id)) {
 
-                id = Mensagens.leInteiro("Id already taken. Try again: ");
+                id = Messages.readInt("Id already taken. Try again: ");
             }
 
-            String name = Mensagens.leString("Employee #" + (i + 1) + " name:");
+            String name = Messages.readString("Employee #" + (i + 1) + " name:");
 
-            double salary = Mensagens.leDouble("Employee #" + (i + 1) + " salary:");
+            double salary = Messages.readDouble("Employee #" + (i + 1) + " salary:");
 
             Employee employee = new Employee(id, name, salary);
 
             employees.add(employee);
         }
 
-        int idSalaryIncrease = Mensagens.leInteiro("Enter the employee id that will have salary increase: ");
+        int idSalaryIncrease = Messages.readInt("Enter the employee id that will have salary increase: ");
 
         Employee emp = employees.stream().filter(x -> x.getId() == idSalaryIncrease).findFirst().orElse(null);
 
@@ -44,7 +44,7 @@ public class EmployeeMain {
 
 		else {
             
-			double percentage = Mensagens.leDouble("Enter the percentage: ");
+			double percentage = Messages.readDouble("Enter the percentage: ");
 			emp.increaseSalary(percentage);
 		}
 
@@ -57,7 +57,7 @@ public class EmployeeMain {
 			sb.append(employee.toString() + "\n");
 		}
 
-        Mensagens.mostraMSG(sb.toString());
+        Messages.showMSG(sb.toString());
     }
 
     public static boolean hasId(List<Employee> list, int id) {

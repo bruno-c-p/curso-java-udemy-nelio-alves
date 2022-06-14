@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.TimeZone;
 
-import utils.Mensagens;
+import utils.Messages;
 
 public class DateMain {
 
@@ -26,13 +26,13 @@ public class DateMain {
         Date y2 = sdf2.parse("25/06/2022 21:15:30");
         Date y3 = Date.from(Instant.parse("2022-06-25T21:15:30Z"));
 
-        Mensagens.mostraMSG(sdf2.format(x1));
-        Mensagens.mostraMSG(sdf2.format(x2));
-        Mensagens.mostraMSG(sdf2.format(x3));
-        Mensagens.mostraMSG(sdf2.format(x4));
+        Messages.showMSG(sdf2.format(x1));
+        Messages.showMSG(sdf2.format(x2));
+        Messages.showMSG(sdf2.format(x3));
+        Messages.showMSG(sdf2.format(x4));
 
-        Mensagens.mostraMSG(sdf.format(y1));
-        Mensagens.mostraMSG(sdf2.format(y2));
-        Mensagens.mostraMSG(sdf3.format(y3));
+        Messages.showMSG(sdf.format(y1));
+        Messages.showMSG(sdf2.format(y2));
+        Messages.showMSG(sdf3.format(y3));
     }
 }

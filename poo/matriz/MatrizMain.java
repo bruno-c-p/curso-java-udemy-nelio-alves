@@ -1,12 +1,12 @@
 package poo.matriz;
 
-import utils.Mensagens;
+import utils.Messages;
 
 public class MatrizMain {
 
     public static void main(String[] args) {
         
-        int n = Mensagens.leInteiro("");
+        int n = Messages.readInt("");
 
         int[][] matriz = new int[n][n];
 
@@ -14,7 +14,7 @@ public class MatrizMain {
 
             for (int j = 0; j < matriz[i].length; j++) {
 
-                matriz[i][j] = Mensagens.leInteiro("");
+                matriz[i][j] = Messages.readInt("");
             }
         }
 
