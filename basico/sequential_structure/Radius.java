@@ -1,4 +1,4 @@
-package basico;
+package basico.sequential_structure;
 
 import java.text.DecimalFormat;
 
