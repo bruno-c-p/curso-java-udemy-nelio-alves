@@ -1,8 +1,8 @@
-package poo.matriz;
+package poo.multidimensional_array;
 
 import utils.Messages;
 
-public class ExercicioMatriz {
+public class MultidimensionalArrayExercise {
 
     public static void main(String[] args) {
 
