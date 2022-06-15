@@ -1,4 +1,4 @@
-package basico.conditional;
+package basic.conditional;
 
 import java.text.DecimalFormat;
 

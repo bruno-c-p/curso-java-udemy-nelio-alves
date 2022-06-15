@@ -1,4 +1,4 @@
-package basico.repetitive;
+package basic.repetitive;
 
 import utils.Messages;
 

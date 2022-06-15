@@ -1,4 +1,4 @@
-package basico.sequential_structure;
+package basic.sequential_structure;
 
 import utils.Messages;
 
