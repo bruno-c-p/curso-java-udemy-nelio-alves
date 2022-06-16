@@ -1,4 +1,4 @@
-package poo.array.exercicio;
+package poo.array.employee;
 
 import java.text.DecimalFormat;
 
