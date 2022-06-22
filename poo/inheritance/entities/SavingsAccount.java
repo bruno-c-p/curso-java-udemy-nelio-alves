@@ -13,6 +13,11 @@ public class SavingsAccount extends Account {
         this.interestRate = interestRate;
     }
 
+    @Override
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+
     public Double getInterestRate() {
         return interestRate;
     }
