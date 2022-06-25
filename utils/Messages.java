@@ -15,6 +15,10 @@ public class Messages {
 	public static String readString(String message) {
 		return JOptionPane.showInputDialog(message);
 	}
+
+	public static char readChar(String message) {
+		return JOptionPane.showInputDialog(message).toUpperCase().charAt(0);
+	}
 	
 	public static void showMSG(String message) {
 		JOptionPane.showMessageDialog(null, message);
