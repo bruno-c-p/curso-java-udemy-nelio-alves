@@ -12,6 +12,7 @@ public class Program {
 
         //UPCASTING
         Account acc1 = bacc;
+        System.out.println(acc1);
 
         Account acc2 = new BusinessAccount(1003, "Jorge", 0.0, 200.0);
 
