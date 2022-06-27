@@ -3,17 +3,17 @@ package poo.abstract_exercise.entities;
 import java.text.DecimalFormat;
 
 public abstract class Person {
-    
-    private static DecimalFormat df = new DecimalFormat("0,000.00");
+
+    private static final DecimalFormat df = new DecimalFormat("0,000.00");
     private String name;
-    private Double anualIncome;
-    
+    private Double annualIncome;
+
     public Person() {
     }
 
     public Person(String name, Double anualIncome) {
         this.name = name;
-        this.anualIncome = anualIncome;
+        this.annualIncome = anualIncome;
     }
 
     @Override
@@ -31,11 +31,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public Double getAnualIncome() {
-        return anualIncome;
+    public Double getAnnualIncome() {
+        return annualIncome;
     }
 
-    public void setAnualIncome(Double anualIncome) {
-        this.anualIncome = anualIncome;
+    public void setAnnualIncome(Double annualIncome) {
+        this.annualIncome = annualIncome;
     }
 }

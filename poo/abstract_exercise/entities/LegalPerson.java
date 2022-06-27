@@ -17,11 +17,11 @@ public class LegalPerson extends Person {
 
         if (this.numberOfEmployees > 10) {
 
-            return this.getAnualIncome() * 0.14;
+            return this.getAnnualIncome() * 0.14;
 
         } else {
 
-            return this.getAnualIncome() * 0.16;
+            return this.getAnnualIncome() * 0.16;
         }
     }
 

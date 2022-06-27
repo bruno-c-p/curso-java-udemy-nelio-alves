@@ -1,9 +1,9 @@
-package poo.enums;
+package poo.enums_;
 
 import java.util.Date;
 
-import poo.enums.entities.Order;
-import poo.enums.entities.enums.OrderStatus;
+import poo.enums_.entities.Order;
+import poo.enums_.entities.enums.OrderStatus;
 
 public class OrderMain {
 

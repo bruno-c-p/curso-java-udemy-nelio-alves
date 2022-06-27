@@ -7,8 +7,8 @@ public class NaturalPerson extends Person {
     public NaturalPerson() {
     }
 
-    public NaturalPerson(String name, Double anualIncome, Double healthExpenditures) {
-        super(name, anualIncome);
+    public NaturalPerson(String name, Double annualIncome, Double healthExpenditures) {
+        super(name, annualIncome);
         this.healthExpenditures = healthExpenditures;
     }
 
@@ -17,13 +17,13 @@ public class NaturalPerson extends Person {
 
         double basicTax;
         
-		if (getAnualIncome() < 20000.0) {
+		if (getAnnualIncome() < 20000.0) {
 
-			basicTax = getAnualIncome() * 0.15;
+			basicTax = getAnnualIncome() * 0.15;
 
 		} else {
 
-			basicTax = getAnualIncome() * 0.25;
+			basicTax = getAnnualIncome() * 0.25;
 		}
 
 		basicTax -= getHealthExpenditures() * 0.5;

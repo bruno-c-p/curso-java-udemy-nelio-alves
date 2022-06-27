@@ -1,4 +1,4 @@
-package poo.enums.entities.enums;
+package poo.enums_.entities.enums;
 
 public enum OrderStatus {
     PENDING_PAYMENT,

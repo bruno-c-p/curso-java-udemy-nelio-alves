@@ -5,13 +5,13 @@ import java.text.DecimalFormat;
 public class Employee {
 
     DecimalFormat df = new DecimalFormat(".00");
-    
+
     private Integer id;
     private String name;
     private Double salary;
 
     public Employee(Integer id, String name, Double salary) {
-        
+
         this.id = id;
         this.name = name;
         this.salary = salary;

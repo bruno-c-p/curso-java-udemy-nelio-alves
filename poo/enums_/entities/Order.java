@@ -1,8 +1,8 @@
-package poo.enums.entities;
+package poo.enums_.entities;
 
 import java.util.Date;
 
-import poo.enums.entities.enums.OrderStatus;
+import poo.enums_.entities.enums.OrderStatus;
 
 public class Order {
     private Integer id;

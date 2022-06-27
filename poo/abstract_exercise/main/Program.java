@@ -24,17 +24,17 @@ public class Program {
             char personType = Messages.readChar("Individual or company (I/C)?");
 
             String name = Messages.readString("Name: ");
-            double anualIncome = Messages.readDouble("Anual income: ");
+            double annualIncome = Messages.readDouble("Anual income: ");
 
             if (personType == 'I') {
 
                 double healthExpenditures = Messages.readDouble("Health expenditures: ");
-                people.add(new NaturalPerson(name, anualIncome, healthExpenditures));
+                people.add(new NaturalPerson(name, annualIncome, healthExpenditures));
 
             } else {
 
                 int numberOfEmployees = Messages.readInt("Number of employees: ");
-                people.add(new LegalPerson(name, anualIncome, numberOfEmployees));
+                people.add(new LegalPerson(name, annualIncome, numberOfEmployees));
             }
         }
 
@@ -43,14 +43,12 @@ public class Program {
 
         for (Person person : people) {
 
-            peopleList.append(person.toString() + "\n");
+            peopleList.append(person.toString()).append("\n");
         }
-
         
         double totalTaxes = 0;
 
         for (Person person : people) {
-
             totalTaxes += person.taxCalculation();
         }
 

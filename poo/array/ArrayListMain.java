@@ -34,7 +34,7 @@ public class ArrayListMain {
 
         System.out.println("Index of Marco: " + list.indexOf("Marco"));
 
-        List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').toList();
 
         for (String x : result) {
             System.out.println(x);

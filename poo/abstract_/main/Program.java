@@ -43,7 +43,7 @@ public class Program {
         shapeList.append("SHAPE AREAS: ");
 
         for (Shape shape : shapes) {
-            shapeList.append(df.format(shape.area()) + "\n");
+            shapeList.append(df.format(shape.area())).append("\n");
         }
 
         Messages.showMSG(shapeList.toString());

@@ -37,32 +37,29 @@ public class EmployeeMain {
 
         Employee emp = employees.stream().filter(x -> x.getId() == idSalaryIncrease).findFirst().orElse(null);
 
-		if (emp == null) {
+        if (emp == null) {
 
-			System.out.println("This id does not exist!");
-		}
+            System.out.println("This id does not exist!");
+        } else {
 
-		else {
-            
-			double percentage = Messages.readDouble("Enter the percentage: ");
-			emp.increaseSalary(percentage);
-		}
+            double percentage = Messages.readDouble("Enter the percentage: ");
+            emp.increaseSalary(percentage);
+        }
 
         StringBuilder sb = new StringBuilder();
 
         sb.append("List of employees:");
 
         for (Employee employee : employees) {
-
-			sb.append(employee.toString() + "\n");
-		}
+            sb.append(employee.toString()).append("\n");
+        }
 
         Messages.showMSG(sb.toString());
     }
 
     public static boolean hasId(List<Employee> list, int id) {
 
-		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
-		return emp != null;
-	}
+        Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return emp != null;
+    }
 }
